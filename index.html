@@ -5,6 +5,12 @@
     <title>MoneyNet Online Bank</title>
     <link rel="stylesheet" href="./assets/styles.css" />
     <link rel="stylesheet" href="./assets/fontello.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto+Condensed:wght@300&family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -23,7 +29,12 @@
       </nav>
     </header>
     <main>
+      <!-- inicio de la seccion Hero -->
       <section id="hero">
+        <div class="hero-logo">
+          <img src="./assets/img/Logo_Circ.png" alt="logoMB" />
+          <h1>Money<span>Net</span></h1>
+        </div>
         <p>
           Somos <b>Money<span>Net</span></b
           >, un banco online que te ofrece servicios bancarios tradicionales,
@@ -34,16 +45,22 @@
         </p>
         <a href="#">Registrate</a>
       </section>
-      <section id="gifts">
-        <div class="gifts-container">
-          <p>
-            En MoneyBank, cada operación que realices te acerca más a los
-            regalos que siempre quisiste. Canjea tus puntos por viajes,
-            tecnología, descuentos y mucho más. ¡Aprovecha al máximo tus
-            operaciones y obtén increíbles regalos!
-          </p>
+      <!-- inicio de la seccion Puntos -->
+      <section id="puntos">
+        <div class="puntos-container">
+          <div class="puntos-info">
+            <h2>Gana con Nosotros</h2>
+            <p>
+              En MoneyBank, cada operación que realices te acerca más a los
+              regalos que siempre quisiste. Canjea tus puntos por viajes,
+              tecnología, descuentos y mucho más. ¡Aprovecha al máximo tus
+              operaciones y obtén increíbles regalos!
+            </p>
+          </div>
+          <img src="./assets/img/Gifts.PNG" alt="Regalos" />
         </div>
       </section>
+      <!-- inicio de la seccion Crypto -->
       <section id="cripto">
         <div class="crypto-title">
           <h2>¡Invierte en las criptomonedas del futuro!</h2>
@@ -61,8 +78,174 @@
             >!
           </p>
         </div>
-        <div class="crypto-cotizaciones"></div>
+        <!-- contenedor de cars Crypto -->
+        <div class="crypto-compra">
+          <h2>Comenza ahora mismo!</h2>
+          <div class="cards-container">
+            <!-- Card BTC -->
+            <div class="card">
+              <div class="card-top">
+                <img src="./assets/Icons/btc.png" alt="BTC" />
+                <div class="card-title">
+                  <h2>BitCoin</h2>
+                  <div class="card-title-desc">
+                    <h3>(BTC)</h3>
+                    <p>+287%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-info">
+                <h2>Max Historico</h2>
+                <p>U$D 68.798,63</p>
+                <h2>Valor Actual</h2>
+                <p>U$D 23.998,29</p>
+                <p>$ 8.687.380,98</p>
+              </div>
+              <a href="#">Comprar</a>
+            </div>
+            <!-- Card ETH -->
+            <div class="card">
+              <div class="card-top">
+                <img src="./assets/Icons/eth.png" alt="ETH" />
+                <div class="card-title">
+                  <h2>Ethereum</h2>
+                  <div class="card-title-desc">
+                    <h3>(ETH)</h3>
+                    <p>+299%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-info">
+                <h2>Max Historico</h2>
+                <p>U$D 4.891,70</p>
+                <h2>Valor Actual</h2>
+                <p>U$D 1.635,40</p>
+                <p>$ 592.014,80</p>
+              </div>
+              <a href="#">Comprar</a>
+            </div>
+            <!-- Card USDT -->
+            <div class="card">
+              <div class="card-top">
+                <img src="./assets/Icons/usdt.png" alt="USDT" />
+                <div class="card-title">
+                  <h2>Tether</h2>
+                  <div class="card-title-desc">
+                    <h3>(USDT)</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="card-info">
+                <h2>Max Historico</h2>
+                <p>Stable Coin</p>
+                <h2>Valor Actual</h2>
+                <p>U$D 1,00</p>
+                <p>$ 362,00</p>
+              </div>
+              <a href="#">Comprar</a>
+            </div>
+            <!-- Card USDC -->
+            <div class="card">
+              <div class="card-top">
+                <img src="./assets/Icons/usdc.png" alt="USDT" />
+                <div class="card-title">
+                  <h2>USD Coin</h2>
+                  <div class="card-title-desc">
+                    <h3>(USDC)</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="card-info">
+                <h2>Max Historico</h2>
+                <p>Stable Coin</p>
+                <h2>Valor Actual</h2>
+                <p>U$D 1,00</p>
+                <p>$ 362,00</p>
+              </div>
+              <a href="#">Comprar</a>
+            </div>
+          </div>
+        </div>
       </section>
+      <section class="creditcard">
+        <h2>Descubre la nuestra exclusiva Tarjeta de Crédito Internacional</h2>
+        <div class="creditcard-info">
+          <img src="./assets/img/tarjeta gold.png" alt="moneycard" />
+          <p>
+            En MoneyBank ofrecemos una Tarjeta de Crédito Internacional
+            exclusiva para nuestros clientes, la cual te permite pagar tanto con
+            tu dinero depositado como con tus cryptomonedas en cualquier lugar
+            que acepte tarjetas de crédito. La tarjeta cuenta con múltiples
+            beneficios, como asistencia al viajero, seguro de compra y
+            protección contra fraudes, entre otros. Si quieres solicitarla o
+            conocer más detalles, ¡contáctanos y te asesoraremos!. Si quieres
+            saber más sobre nuestra Tarjeta de Crédito Internacional y cómo
+            puedes solicitarla, no dudes en contactarnos. ¡En MoneyBank estamos
+            comprometidos en brindarte las mejores soluciones financieras para
+            ti!
+          </p>
+        </div>
+        <p></p>
+      </section>
+      <section id="aboutus">
+        <div class="aboutus-info">
+          <h2>Acerca de Nosotros!</h2>
+          <p>
+            En MoneyBank, estamos comprometidos con ofrecer servicios
+            financieros innovadores y accesibles para todos nuestros clientes.
+            Desde nuestra fundación en 2010, nos hemos destacado por nuestra
+            atención personalizada y nuestros productos financieros a medida de
+            cada necesidad. Con presencia en toda la provincia de Córdoba,
+            contamos con 10 oficinas a lo largo del territorio y seguimos
+            expandiéndonos. También puedes encontrarnos en nuestras redes
+            sociales, donde compartimos información útil y promociones
+            especiales para nuestros clientes. Nuestro equipo de expertos está
+            siempre disponible para atender tus consultas y brindarte la mejor
+            atención. Si tienes alguna pregunta, puedes contactarnos a través de
+            nuestra línea telefónica en Córdoba al 0351-123-4567, o escribirnos
+            por correo electrónico a info@moneybank.com.ar. ¡Gracias por confiar
+            en MoneyBank para tus operaciones financieras!
+          </p>
+        </div>
+        <div class="aboutus-mas">
+          <div class="aboutus-mas-mapa"></div>
+          <div class="aboutus-mas-redes">
+            <h2>Seguinos en nuestras Redes</h2>
+            <div class="aboutus-mas-redes-det">
+              <img src="./assets/img/cells.PNG" alt="redes" />
+              <ul class="lista-redes">
+                <li>Instagram: @moneybank.arg</li>
+                <li>Facebook: /moneybank.arg</li>
+                <li>Twitter: @moneybank_arg</li>
+                <li>WhatsApp: +54 9 351 123-4567</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacto"></section>
+      <h2>Ponte en contacto con Nosotros!</h2>
+      <p>
+        Por favor, completa el formulario a continuación para ponerte en
+        contacto con nosotros. Estamos aquí para ayudarte en todo lo que
+        necesites. Si tienes alguna pregunta o comentario, no dudes en
+        escribirnos. ¡Estamos deseando saber de ti!
+      </p>
+      <form>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="subject">Asunto:</label>
+        <input type="text" id="subject" name="subject" required />
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <input type="submit" value="Enviar" />
+      </form>
     </main>
     <footer>
       <p>Derechos reservados &copy; 2023 MoneyNet Banco Online</p>
