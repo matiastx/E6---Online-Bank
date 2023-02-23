@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <title>MoneyNet Online Bank</title>
     <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/animaciones.css" />
+    <link rel="stylesheet" href="./assets/mediaqueries.css" />
     <link rel="stylesheet" href="./assets/fontello.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +24,8 @@
         <!-- Inicio del Navbar -->
         <div class="navbar flex">
           <!-- Checkbox del Menu Hamburguesa -->
-          <input type="checkbox" id="menu-toggle" />
+          <input type="checkbox" id="menu-hamburg" />
+          <input type="checkbox" id="menu-carrito" />
           <ul class="navbar-list flex">
             <li><a href="#hero" class="icon-home-1"></a></li>
             <li><a href="#puntos">Beneficios</a></li>
@@ -31,15 +34,15 @@
             <li><a href="#aboutus">About Us</a></li>
             <li><a href="#contact">Contactanos</a></li>
             <li class="navbar-list-mh"><a href="#">Login</a></li>
-            <li class="navbar-list-mh"><a href="#">Registro</a></li>
+            <li class="navbar-list-mh"><a href="#">Registrate</a></li>
           </ul>
-          <!-- ☰ Menu Hamburguesa ☰ -->
-          <label for="menu-toggle" class="menu-h flex"
-            ><img
-              class="menu-toggle-user"
-              src="./assets/Icons/icon-user.png"
-              alt=""
-          /></label>
+          <!-- ☰ Menu Hamburguesa y carrito ☰ -->
+          <label for="menu-hamburg" class="menu-h flex"
+            ><a class="icon-th-large"></a
+          ></label>
+          <label for="menu-carrito" class="menu-c flex"
+            ><a class="icon-basket-2"></a
+          ></label>
         </div>
         <div class="overlay"></div>
       </nav>
@@ -57,10 +60,15 @@
             >, un banco online que te ofrece servicios bancarios tradicionales,
             así como la compra y venta de criptomonedas, como Bitcoin, Ethereum
             y Stable Coins. Nuestro banco online es seguro y cuenta con medidas
-            de seguridad avanzadas para proteger tus datos y transacciones.
-            Regístrate ahora para disfrutar de todos nuestros beneficios.
+            de seguridad avanzadas para proteger tus datos y transacciones. Si
+            ya sos cliente, <span class="s-mn">Logueate</span>, si todavía no
+            sos cliente, <span class="s-mn">Regístrate</span> ahora para
+            disfrutar de todos nuestros beneficios.
           </p>
-          <a href="#">Registrate</a>
+          <div class="reg-log flex">
+            <a class="btn-log" href="#">Registrate</a>
+            <a class="btn-log" href="#">Login</a>
+          </div>
         </div>
       </section>
       <!-- inicio de la seccion Puntos -->
@@ -220,9 +228,9 @@
         </div>
       </section>
       <section id="aboutus" class="flex sect">
-        <div class="aboutus-info">
-          <h2>Acerca de Nosotros!</h2>
-          <p>
+        <div class="aboutus-info flex center">
+          <h2 class="sect-title">Acerca de Nosotros!</h2>
+          <p class="sect-text">
             En <b class="b-mn">Money<span class="s-mn">Net</span></b
             >, estamos comprometidos con ofrecer servicios financieros
             innovadores y accesibles para todos nuestros clientes. Desde nuestra
@@ -241,44 +249,103 @@
             operaciones financieras!
           </p>
         </div>
-        <div class="aboutus-mas">
-          <div class="aboutus-mas-mapa"></div>
-          <div class="aboutus-mas-redes">
-            <h2>Seguinos en nuestras Redes</h2>
-            <div class="aboutus-mas-redes-det">
+        <div class="aboutus-mas flex center">
+          <div class="aboutus-mas-mapa flex center">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  width="400px"
+                  height="400px"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=Colon 550 Cordoba&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe>
+              </div>
+            </div>
+            <a> Av.colon 550, Cordoba, Argentina</a>
+          </div>
+          <div class="aboutus-mas-redes flex center">
+            <h2 class="sect-title">Seguinos en nuestras Redes</h2>
+            <div class="aboutus-mas-redes-det flex center">
               <img src="./assets/img/cells.PNG" alt="redes" />
-              <ul class="lista-redes">
-                <li>Instagram: <a href="#">>@moneybank.arg</a></li>
-                <li>Facebook: <a href="#">/moneybank.arg</a></li>
-                <li>Twitter: <a href="#">@moneybank_arg</a></li>
-                <li>WhatsApp: <a href="#">+54 9 351 123-4567</a></li>
+              <ul class="lista-redes sect-text">
+                <li>
+                  <span class="icon-linkedin-rect"></span
+                  ><a href="#"> @moneybank.arg</a>
+                </li>
+                <li>
+                  <span class="icon-instagram-2"></span
+                  ><a href="#"> @moneybank.arg</a>
+                </li>
+                <li>
+                  <span class="icon-facebook-rect"></span
+                  ><a href="#"> /moneybank.arg</a>
+                </li>
+                <li>
+                  <span class="icon-twitter-bird"></span
+                  ><a href="#"> @moneybank_arg</a>
+                </li>
+                <li>
+                  <span class="icon-whatsapp"></span
+                  ><a href="#"> +54 9 351 123-4567</a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
       <section id="contact" class="flex sect">
-        <h2>Ponte en contacto con Nosotros!</h2>
-        <p>
+        <h2 class="sect-title">Ponte en contacto con Nosotros!</h2>
+        <p class="sect-text">
           Por favor, completa el formulario a continuación para ponerte en
           contacto con nosotros. Estamos aquí para ayudarte en todo lo que
           necesites. Si tienes alguna pregunta o comentario, no dudes en
           escribirnos. ¡Estamos deseando saber de ti!
         </p>
-        <form>
+        <form class="contact-frm flex">
           <label for="name">Nombre:</label>
-          <input type="text" id="name" name="name" required />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            maxlength="50"
+            placeholder="Ingrese su Nombre"
+            required
+          />
 
           <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            maxlength="50"
+            placeholder="Ingrese su correo electrónico"
+            required
+          />
 
           <label for="subject">Asunto:</label>
-          <input type="text" id="subject" name="subject" required />
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            maxlength="80"
+            placeholder="Ingrese el asunto de su consulta"
+            required
+          />
 
           <label for="message">Mensaje:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Ingrese su consulta"
+            required
+          ></textarea>
 
-          <input type="submit" value="Enviar" />
+          <input class="frm-btn-enviar" type="submit" value="Enviar" />
         </form>
       </section>
     </main>
