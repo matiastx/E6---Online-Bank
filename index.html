@@ -13,79 +13,100 @@
     />
   </head>
   <body>
-    <header>
-      <nav class="navbar-container">
-        <div class="logo-container">
+    <header class="flex center">
+      <nav class="navbar-container flex">
+        <div class="logo-container flex">
           <img src="./assets/img/Logo_Circ.png" alt="logo" class="logo" />
-          <h2>MoneyNet</h2>
+          <a href="#hero">Money<span>Net</span></a>
         </div>
-        <div class="navbar">
-          <ul class="navbar-list">
-            <li><a href="#" class="icon-home-1">Home</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Contacto</a></li>
+        <!-- Inicio del Navbar -->
+        <div class="navbar flex">
+          <!-- Checkbox del Menu Hamburguesa -->
+          <input type="checkbox" id="menu-toggle" />
+          <ul class="navbar-list flex">
+            <li><a href="#hero" class="icon-home-1"></a></li>
+            <li><a href="#puntos">Beneficios</a></li>
+            <li><a href="#crypto">Crypto</a></li>
+            <li><a href="#moneycard">MoneyCard</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#contact">Contactanos</a></li>
+            <li class="navbar-list-mh"><a href="#">Login</a></li>
+            <li class="navbar-list-mh"><a href="#">Registro</a></li>
           </ul>
+          <!-- ☰ Menu Hamburguesa ☰ -->
+          <label for="menu-toggle" class="menu-h flex"
+            ><img
+              class="menu-toggle-user"
+              src="./assets/Icons/icon-user.png"
+              alt=""
+          /></label>
         </div>
+        <div class="overlay"></div>
       </nav>
     </header>
     <main>
       <!-- inicio de la seccion Hero -->
-      <section id="hero">
-        <div class="hero-logo">
+      <section id="hero" class="flex sect">
+        <div class="hero-logo flex">
           <img src="./assets/img/Logo_Circ.png" alt="logoMB" />
           <h1>Money<span>Net</span></h1>
         </div>
-        <p>
-          Somos <b>Money<span>Net</span></b
-          >, un banco online que te ofrece servicios bancarios tradicionales,
-          así como la compra y venta de criptomonedas, como Bitcoin, Ethereum y
-          Stable Coins. Nuestro banco online es seguro y cuenta con medidas de
-          seguridad avanzadas para proteger tus datos y transacciones.
-          Regístrate ahora para disfrutar de todos nuestros beneficios.
-        </p>
-        <a href="#">Registrate</a>
+        <div class="hero-info flex center">
+          <p class="sect-text">
+            Somos <b class="b-mn">Money<span class="s-mn">Net</span></b
+            >, un banco online que te ofrece servicios bancarios tradicionales,
+            así como la compra y venta de criptomonedas, como Bitcoin, Ethereum
+            y Stable Coins. Nuestro banco online es seguro y cuenta con medidas
+            de seguridad avanzadas para proteger tus datos y transacciones.
+            Regístrate ahora para disfrutar de todos nuestros beneficios.
+          </p>
+          <a href="#">Registrate</a>
+        </div>
       </section>
       <!-- inicio de la seccion Puntos -->
-      <section id="puntos">
-        <div class="puntos-container">
-          <div class="puntos-info">
-            <h2>Gana con Nosotros</h2>
-            <p>
-              En MoneyBank, cada operación que realices te acerca más a los
-              regalos que siempre quisiste. Canjea tus puntos por viajes,
-              tecnología, descuentos y mucho más. ¡Aprovecha al máximo tus
-              operaciones y obtén increíbles regalos!
+      <section id="puntos" class="flex sect">
+        <div class="puntos-container flex center">
+          <div class="puntos-info flex center">
+            <h2 class="sect-title">Gana con Nosotros</h2>
+            <p class="sect-text">
+              En <b class="b-mn">Money<span class="s-mn">Net</span></b
+              >, cada operación que realices te acerca más a los regalos que
+              siempre quisiste. Canjea tus puntos por viajes, tecnología,
+              descuentos y mucho más. ¡Aprovecha al máximo tus operaciones y
+              obtén increíbles regalos!
             </p>
           </div>
           <img src="./assets/img/Gifts.PNG" alt="Regalos" />
         </div>
       </section>
       <!-- inicio de la seccion Crypto -->
-      <section id="cripto">
-        <div class="crypto-title">
-          <h2>¡Invierte en las criptomonedas del futuro!</h2>
-          <p>
-            En <b>Money<span>Net</span></b
+      <section id="crypto" class="flex sect">
+        <div class="crypto-title flex center">
+          <h2 class="sect-title">¡Invierte en las criptomonedas del futuro!</h2>
+          <p class="sect-text">
+            En <b class="b-mn">Money<span class="s-mn">Net</span></b
             >, te ofrecemos la posibilidad de invertir en criptomonedas como
             Bitcoin (BTC), Ethereum (ETH), Tether (USDT), Dai y USD Coin (USDC).
-            Además de las posibilidades de inversión, nuestras criptomonedas te
-            permiten ganar a la inflación ahorrando en una moneda segura y
-            descentralizada. Ofrecemos las mejores tasas de cambio para que
-            puedas convertir tus pesos a criptomonedas y viceversa de manera
-            fácil y rápida. ¡No pierdas la oportunidad de invertir en las
-            criptomonedas del futuro y diversificar tus inversiones con
-            <b>Money<span>Net</span></b
-            >!
+            Además de las posibilidades de inversión, nuestras
+            <b>criptomonedas</b> te permiten ganar a la inflación ahorrando en
+            una moneda segura y descentralizada. Ofrecemos las mejores tasas de
+            cambio para que puedas convertir tus pesos a criptomonedas y
+            viceversa de manera fácil y rápida. ¡No pierdas la oportunidad de
+            invertir en las criptomonedas del futuro y diversificar tus
+            inversiones con
+            <b class="b-mn">Money<span class="s-mn">Net</span>!</b>
           </p>
         </div>
+      </section>
+      <section id="crypto-buy" class="flex sect">
         <!-- contenedor de cars Crypto -->
-        <div class="crypto-compra">
-          <h2>Comenza ahora mismo!</h2>
-          <div class="cards-container">
+        <div class="cryptomonedas flex center">
+          <h2 class="sect-title">Comenza ahora mismo!</h2>
+          <div class="cards-container flex center">
             <!-- Card BTC -->
             <div class="card">
               <div class="card-top">
-                <img src="./assets/Icons/btc.png" alt="BTC" />
+                <img class="img-cards" src="./assets/Icons/btc.png" alt="BTC" />
                 <div class="card-title">
                   <h2>BitCoin</h2>
                   <div class="card-title-desc">
@@ -106,7 +127,7 @@
             <!-- Card ETH -->
             <div class="card">
               <div class="card-top">
-                <img src="./assets/Icons/eth.png" alt="ETH" />
+                <img class="img-cards" src="./assets/Icons/eth.png" alt="ETH" />
                 <div class="card-title">
                   <h2>Ethereum</h2>
                   <div class="card-title-desc">
@@ -127,7 +148,11 @@
             <!-- Card USDT -->
             <div class="card">
               <div class="card-top">
-                <img src="./assets/Icons/usdt.png" alt="USDT" />
+                <img
+                  class="img-cards"
+                  src="./assets/Icons/usdt.png"
+                  alt="USDT"
+                />
                 <div class="card-title">
                   <h2>Tether</h2>
                   <div class="card-title-desc">
@@ -147,7 +172,11 @@
             <!-- Card USDC -->
             <div class="card">
               <div class="card-top">
-                <img src="./assets/Icons/usdc.png" alt="USDT" />
+                <img
+                  class="img-cards"
+                  src="./assets/Icons/usdc.png"
+                  alt="USDT"
+                />
                 <div class="card-title">
                   <h2>USD Coin</h2>
                   <div class="card-title-desc">
@@ -167,44 +196,49 @@
           </div>
         </div>
       </section>
-      <section class="creditcard">
-        <h2>Descubre la nuestra exclusiva Tarjeta de Crédito Internacional</h2>
-        <div class="creditcard-info">
-          <img src="./assets/img/tarjeta gold.png" alt="moneycard" />
-          <p>
-            En MoneyBank ofrecemos una Tarjeta de Crédito Internacional
-            exclusiva para nuestros clientes, la cual te permite pagar tanto con
-            tu dinero depositado como con tus cryptomonedas en cualquier lugar
-            que acepte tarjetas de crédito. La tarjeta cuenta con múltiples
-            beneficios, como asistencia al viajero, seguro de compra y
-            protección contra fraudes, entre otros. Si quieres solicitarla o
-            conocer más detalles, ¡contáctanos y te asesoraremos!. Si quieres
-            saber más sobre nuestra Tarjeta de Crédito Internacional y cómo
-            puedes solicitarla, no dudes en contactarnos. ¡En MoneyBank estamos
+      <section id="moneycard" class="flex sect">
+        <h2 class="sect-title">
+          Descubre la nuestra exclusiva Tarjeta de Crédito Internacional
+        </h2>
+        <div class="moneycard-info flex center">
+          <img src="./assets/img/tarjeta gold.png" alt="card" />
+          <p class="sect-text">
+            En <b class="b-mn">Money<span class="s-mn">Net</span></b> ofrecemos
+            una Tarjeta de Crédito Internacional exclusiva para nuestros
+            clientes, la cual te permite pagar tanto con tu dinero depositado
+            como con tus cryptomonedas en cualquier lugar que acepte tarjetas de
+            crédito. La tarjeta cuenta con múltiples beneficios, como asistencia
+            al viajero, seguro de compra y protección contra fraudes, entre
+            otros. Si quieres solicitarla o conocer más detalles, ¡contáctanos y
+            te asesoraremos!. Si quieres saber más sobre nuestra Tarjeta de
+            Crédito Internacional y cómo puedes solicitarla, no dudes en
+            contactarnos. ¡En
+            <b class="b-mn">Money<span class="s-mn">Net</span></b> estamos
             comprometidos en brindarte las mejores soluciones financieras para
             ti!
           </p>
         </div>
-        <p></p>
       </section>
-      <section id="aboutus">
+      <section id="aboutus" class="flex sect">
         <div class="aboutus-info">
           <h2>Acerca de Nosotros!</h2>
           <p>
-            En MoneyBank, estamos comprometidos con ofrecer servicios
-            financieros innovadores y accesibles para todos nuestros clientes.
-            Desde nuestra fundación en 2010, nos hemos destacado por nuestra
-            atención personalizada y nuestros productos financieros a medida de
-            cada necesidad. Con presencia en toda la provincia de Córdoba,
-            contamos con 10 oficinas a lo largo del territorio y seguimos
-            expandiéndonos. También puedes encontrarnos en nuestras redes
-            sociales, donde compartimos información útil y promociones
-            especiales para nuestros clientes. Nuestro equipo de expertos está
-            siempre disponible para atender tus consultas y brindarte la mejor
-            atención. Si tienes alguna pregunta, puedes contactarnos a través de
-            nuestra línea telefónica en Córdoba al 0351-123-4567, o escribirnos
-            por correo electrónico a info@moneybank.com.ar. ¡Gracias por confiar
-            en MoneyBank para tus operaciones financieras!
+            En <b class="b-mn">Money<span class="s-mn">Net</span></b
+            >, estamos comprometidos con ofrecer servicios financieros
+            innovadores y accesibles para todos nuestros clientes. Desde nuestra
+            fundación en 2010, nos hemos destacado por nuestra atención
+            personalizada y nuestros productos financieros a medida de cada
+            necesidad. Con presencia en toda la provincia de Córdoba, contamos
+            con 10 oficinas a lo largo del territorio y seguimos expandiéndonos.
+            También puedes encontrarnos en nuestras redes sociales, donde
+            compartimos información útil y promociones especiales para nuestros
+            clientes. Nuestro equipo de expertos está siempre disponible para
+            atender tus consultas y brindarte la mejor atención. Si tienes
+            alguna pregunta, puedes contactarnos a través de nuestra línea
+            telefónica en Córdoba al 0351-123-4567, o escribirnos por correo
+            electrónico a info@moneybank.com.ar. ¡Gracias por confiar en
+            <b class="b-mn">Money<span class="s-mn">Net</span></b> para tus
+            operaciones financieras!
           </p>
         </div>
         <div class="aboutus-mas">
@@ -214,41 +248,45 @@
             <div class="aboutus-mas-redes-det">
               <img src="./assets/img/cells.PNG" alt="redes" />
               <ul class="lista-redes">
-                <li>Instagram: @moneybank.arg</li>
-                <li>Facebook: /moneybank.arg</li>
-                <li>Twitter: @moneybank_arg</li>
-                <li>WhatsApp: +54 9 351 123-4567</li>
+                <li>Instagram: <a href="#">>@moneybank.arg</a></li>
+                <li>Facebook: <a href="#">/moneybank.arg</a></li>
+                <li>Twitter: <a href="#">@moneybank_arg</a></li>
+                <li>WhatsApp: <a href="#">+54 9 351 123-4567</a></li>
               </ul>
             </div>
           </div>
         </div>
       </section>
-      <section class="contacto"></section>
-      <h2>Ponte en contacto con Nosotros!</h2>
-      <p>
-        Por favor, completa el formulario a continuación para ponerte en
-        contacto con nosotros. Estamos aquí para ayudarte en todo lo que
-        necesites. Si tienes alguna pregunta o comentario, no dudes en
-        escribirnos. ¡Estamos deseando saber de ti!
-      </p>
-      <form>
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required />
+      <section id="contact" class="flex sect">
+        <h2>Ponte en contacto con Nosotros!</h2>
+        <p>
+          Por favor, completa el formulario a continuación para ponerte en
+          contacto con nosotros. Estamos aquí para ayudarte en todo lo que
+          necesites. Si tienes alguna pregunta o comentario, no dudes en
+          escribirnos. ¡Estamos deseando saber de ti!
+        </p>
+        <form>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required />
 
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required />
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
 
-        <label for="subject">Asunto:</label>
-        <input type="text" id="subject" name="subject" required />
+          <label for="subject">Asunto:</label>
+          <input type="text" id="subject" name="subject" required />
 
-        <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
 
-        <input type="submit" value="Enviar" />
-      </form>
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
     </main>
     <footer>
-      <p>Derechos reservados &copy; 2023 MoneyNet Banco Online</p>
+      <p>
+        Derechos reservados &copy; 2023
+        <b class="b-mn">Money<span class="s-mn">Net</span></b> Banco Online
+      </p>
     </footer>
   </body>
 </html>
