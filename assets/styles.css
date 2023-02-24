@@ -687,6 +687,13 @@ footer {
   top: -20px;
 }
 
+.log-reg-home {
+  font-family: "Quicksand", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  color: var(--Blanco);
+}
+
 .log-reg-container p {
   padding-bottom: 35px;
   text-align: center;

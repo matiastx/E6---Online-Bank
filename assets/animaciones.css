@@ -140,6 +140,15 @@ html {
   transition: all 0.5s ease;
 }
 
+.log-reg-home:hover {
+  text-shadow: var(--AzulClaro) 3px 2px;
+  background-color: var(--CelesteClaro);
+  border-radius: 10px;
+  box-shadow: 0px 3px 12px 0px var(--CelesteClaro);
+  -webkit-box-shadow: 0px 0px 15px 12px var(--CelesteClaro);
+  transition: all 0.5s ease;
+}
+
 .frm-btn:hover {
   background: linear-gradient(
     180deg,
