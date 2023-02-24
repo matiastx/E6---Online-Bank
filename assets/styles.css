@@ -8,12 +8,16 @@
   --Azul: #1e50ff;
   --AzulOscuro: #07122b;
   --Lila: #833ab4;
+  --VerdeAgua: #00d5ff;
+  --ShadowBG: #ffffff0d;
+  --ShadowColor: #1f268780;
   /* Textos */
   --Blanco: #ffffff;
   --Gris: #272d37;
   --Gris2: #626161;
   --Negro: #02050e;
-  --VerdeAgua: #00d5ff;
+  --Home: #a9d2e2;
+
   /* Fuentes */
   /* Logo: font-family: 'Quicksand', sans-serif; */
   /* Texto Normal: font-family: 'Roboto Condensed', sans-serif; */
@@ -120,6 +124,11 @@ header {
   font-size: 23px;
 }
 
+.navbar-list li:first-child > a {
+  font-weight: 700;
+  color: #a9d2e2;
+}
+
 .menu-c a {
   background: linear-gradient(215deg, var(--CelesteClaro) 0%, var(--Azul) 50%);
   color: var(--Blanco);
@@ -155,11 +164,7 @@ header {
   top: 65px;
   right: 0;
   padding: 50px 30px;
-  background: linear-gradient(
-    180deg,
-    rgba(4, 63, 110, 0.9) 10%,
-    rgba(0, 153, 246, 0.9) 100%
-  );
+  background: linear-gradient(180deg, #043f6ee6 10%, #0099f6e6 100%);
   border-left: 1px solid var(--AzulClaro);
   display: flex;
   flex-direction: column;
