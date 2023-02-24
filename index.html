@@ -27,7 +27,6 @@
           <input type="checkbox" id="menu-hamburg" />
           <input type="checkbox" id="menu-carrito" />
           <ul class="navbar-list flex">
-            <li><a href="#hero" class="icon-home-1"></a></li>
             <li><a href="#puntos">Beneficios</a></li>
             <li><a href="#crypto">Crypto</a></li>
             <li><a href="#moneycard">MoneyCard</a></li>
@@ -36,15 +35,91 @@
             <li class="navbar-list-mh"><a href="#">Login</a></li>
             <li class="navbar-list-mh"><a href="#">Registrate</a></li>
           </ul>
-          <!-- ☰ Menu Hamburguesa y carrito ☰ -->
+          <!-- ☰ Menu Hamburguesa y Carrito ☰ -->
           <label for="menu-hamburg" class="menu-h flex"
             ><a class="icon-th-large"></a
           ></label>
           <label for="menu-carrito" class="menu-c flex"
             ><a class="icon-basket-2"></a
           ></label>
+          <!-- Inicio del Carrito de Compras -->
+          <div class="carrito felx">
+            <h2>Tu Compra</h2>
+            <!-- 1er Item del Carrito -->
+            <div class="carrito-item flex center">
+              <img src="./assets/Icons/btc.png" alt="" />
+              <div class="carrito-item-desc flex center">
+                <h3>BitCoin (BTC)</h3>
+                <p>Valor: U$D 23.998,29</p>
+                <p>Valor: $ 8.687.380,98</p>
+                <span></span>
+                <p>SubTot: $ 21.718,45</p>
+              </div>
+              <div class="carrito-item-cant flex center">
+                <span>+</span>
+                <p>0.0025</p>
+                <span>-</span>
+              </div>
+            </div>
+            <!-- 2do Item del Carrito -->
+            <div class="carrito-item flex center">
+              <img src="./assets/Icons/eth.png" alt="" />
+              <div class="carrito-item-desc flex center">
+                <h3>Ethereum (ETH)</h3>
+                <p>Valor: U$D 1.635,40</p>
+                <p>Valor: $ 592.014,80</p>
+                <span></span>
+                <p>SubTot: $ 6.393,76</p>
+              </div>
+              <div class="carrito-item-cant flex center">
+                <span>+</span>
+                <p>0.0108</p>
+                <span>-</span>
+              </div>
+            </div>
+            <!-- 3er Item del Carrito -->
+            <div class="carrito-item flex center">
+              <img src="./assets/Icons/usdt.png" alt="" />
+              <div class="carrito-item-desc flex center">
+                <h3>Tether (USDT)</h3>
+                <p>Valor: U$D 1,00</p>
+                <p>Valor: $ 362</p>
+                <span></span>
+                <p>SubTot: $ 18.100,00</p>
+              </div>
+              <div class="carrito-item-cant flex center">
+                <span>+</span>
+                <p>50.00</p>
+                <span>-</span>
+              </div>
+            </div>
+            <!-- 4to Item del Carrito -->
+            <div class="carrito-item flex center">
+              <img src="./assets/Icons/usdc.png" alt="" />
+              <div class="carrito-item-desc flex center">
+                <h3>USD Coin (USDC)</h3>
+                <p>Valor: U$D 1,00</p>
+                <p>Valor: $ 362</p>
+                <span></span>
+                <p>SubTot: $ 29.159,10</p>
+              </div>
+              <div class="carrito-item-cant flex center">
+                <span>+</span>
+                <p>80.55</p>
+                <span>-</span>
+              </div>
+            </div>
+            <div class="carrito-comprar flex center">
+              <span class="carrito-separador"></span>
+              <div class="carrito-total flex">
+                <p>Total:</p>
+                <h2>$75.371,31</h2>
+              </div>
+              <a href="" class="btn-log">Comprar</a>
+            </div>
+          </div>
+          <div class="overlay"></div>
         </div>
-        <div class="overlay"></div>
       </nav>
     </header>
     <main>

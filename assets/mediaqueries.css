@@ -1,0 +1,33 @@
+@media (max-width: 1250px) {
+  .navbar-list {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    flex-direction: column;
+    background: linear-gradient(
+      180deg,
+      rgba(4, 63, 110, 0.9) 10%,
+      rgba(0, 153, 246, 0.9) 100%
+    );
+    border: 1px solid var(--AzulClaro);
+    border-top: 0px;
+    border-radius: 0px 0px 15px 15px;
+    align-items: flex-start;
+    padding: 45px 60px;
+    gap: 25px;
+    z-index: 2;
+    display: none;
+  }
+
+  .navbar-list-mh {
+    display: flex;
+  }
+
+  .menu-h {
+    display: block;
+  }
+
+  #menu-hamburg:checked ~ .navbar-list {
+    display: flex;
+  }
+}
