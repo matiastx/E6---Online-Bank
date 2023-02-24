@@ -468,6 +468,7 @@ header {
 
 .img-cards {
   height: 75px;
+  padding-left: 15px;
 }
 
 .card-title-desc {
