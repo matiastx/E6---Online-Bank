@@ -444,7 +444,7 @@ header {
   width: 150px;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 1px;
 }
 
 .card-title h2 {
