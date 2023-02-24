@@ -20,6 +20,8 @@
     align-items: flex-start;
     padding: 45px 60px;
     gap: 25px;
+    box-shadow: 0px 3px 12px 0px #0a1d29c5;
+    -webkit-box-shadow: 0px 3px 20px 0px #0a1d29c5;
     z-index: 2;
     /* display: none; */
     transform: translateX(-200%);
