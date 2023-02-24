@@ -423,7 +423,7 @@ header {
   flex-direction: column;
   justify-content: center;
   height: 380px;
-  width: 250px;
+  width: 280px;
   border-radius: 30px;
   background-color: var(--GrisClaro);
   padding: 10px 10px;
@@ -432,18 +432,19 @@ header {
 
 .card-top {
   display: flex;
-  justify-content: flex-start;
-  padding: 10px 5px;
+  /* justify-content: space-around; */
+  justify-content: center;
+  /* padding: 10px 5px; */
   gap: 10px;
 }
 
 .card-title {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 150px;
   justify-content: center;
   align-items: center;
-  gap: 3px;
+  gap: 5px;
 }
 
 .card-title h2 {
@@ -455,8 +456,9 @@ header {
 
 .card-title-desc {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  gap: 5px;
 }
 
 .card-title-desc p {
