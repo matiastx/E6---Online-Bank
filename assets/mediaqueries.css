@@ -1,4 +1,9 @@
+/* media 1250px */
 @media (max-width: 1250px) {
+  main {
+    padding: 0 15px;
+  }
+
   .navbar-list {
     position: absolute;
     top: 65px;
@@ -11,12 +16,14 @@
     );
     border: 1px solid var(--AzulClaro);
     border-top: 0px;
-    border-radius: 0px 0px 15px 15px;
+    border-radius: 0px 0px 15px 0;
     align-items: flex-start;
     padding: 45px 60px;
     gap: 25px;
     z-index: 2;
-    display: none;
+    /* display: none; */
+    transform: translateX(-200%);
+    transition: all 0.5s ease-in-out;
   }
 
   .navbar-list-mh {
@@ -28,6 +35,89 @@
   }
 
   #menu-hamburg:checked ~ .navbar-list {
-    display: flex;
+    transform: translateX(0%);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .cards-container {
+    flex-wrap: wrap;
+  }
+
+  #hero {
+    flex-direction: column;
+    padding-top: 200px;
+  }
+
+  .hero-logo {
+    justify-content: center;
+  }
+
+  .hero-logo h1 {
+    top: auto;
+  }
+
+  .reg-log {
+    flex-wrap: wrap;
+  }
+
+  .btn-log {
+    margin: 10px 0;
+  }
+
+  .puntos-container,
+  .moneycard-info,
+  .aboutus-mas,
+  .aboutus-mas-redes-det {
+    flex-direction: column;
+  }
+
+  #aboutus,
+  .aboutus-mas {
+    gap: 25px;
+  }
+}
+
+/* media 650px */
+@media (max-width: 650px) {
+  .moneycard-info img {
+    display: none;
+  }
+  .aboutus-mas-mapa {
+    display: none;
+  }
+
+  .aboutus-mas-redes,
+  .aboutus-mas-redes-det {
+    width: 100%;
+  }
+
+  .aboutus-mas-redes-det {
+    width: 100%;
+  }
+}
+
+/* media 480px */
+@media (max-width: 480px) {
+  .logo-container a {
+    display: none;
+  }
+  .hero-logo img {
+    height: 180px;
+  }
+
+  #hero {
+    padding-top: 130px;
+  }
+
+  .carrito-item img {
+    display: none;
+  }
+
+  .carrito {
+    width: 100vw;
+  }
+
+  .navbar-list {
+    width: 100vw;
   }
 }

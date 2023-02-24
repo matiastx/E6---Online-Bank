@@ -32,7 +32,9 @@
             <li><a href="#moneycard">MoneyCard</a></li>
             <li><a href="#aboutus">About Us</a></li>
             <li><a href="#contact">Contactanos</a></li>
-            <li class="navbar-list-mh"><a href="#">Login</a></li>
+            <li class="navbar-list-mh">
+              <a href="./pages/login.html">Login</a>
+            </li>
             <li class="navbar-list-mh"><a href="#">Registrate</a></li>
           </ul>
           <!-- ☰ Menu Hamburguesa y Carrito ☰ -->
@@ -115,7 +117,7 @@
                 <p>Total:</p>
                 <h2>$75.371,31</h2>
               </div>
-              <a href="" class="btn-log">Comprar</a>
+              <a class="btn-log">Comprar</a>
             </div>
           </div>
           <div class="overlay"></div>
@@ -141,8 +143,8 @@
             disfrutar de todos nuestros beneficios.
           </p>
           <div class="reg-log flex">
-            <a class="btn-log" href="#">Registrate</a>
-            <a class="btn-log" href="#">Login</a>
+            <a class="btn-log" href="./pages/register.html">Registrate</a>
+            <a class="btn-log" href="./pages/login.html">Login</a>
           </div>
         </div>
       </section>
@@ -205,7 +207,7 @@
                 <p>U$D 23.998,29</p>
                 <p>$ 8.687.380,98</p>
               </div>
-              <a href="#">Comprar</a>
+              <a class="btn-card">Comprar</a>
             </div>
             <!-- Card ETH -->
             <div class="card">
@@ -226,7 +228,7 @@
                 <p>U$D 1.635,40</p>
                 <p>$ 592.014,80</p>
               </div>
-              <a href="#">Comprar</a>
+              <a class="btn-card">Comprar</a>
             </div>
             <!-- Card USDT -->
             <div class="card">
@@ -250,7 +252,7 @@
                 <p>U$D 1,00</p>
                 <p>$ 362,00</p>
               </div>
-              <a href="#">Comprar</a>
+              <a class="btn-card">Comprar</a>
             </div>
             <!-- Card USDC -->
             <div class="card">
@@ -274,7 +276,7 @@
                 <p>U$D 1,00</p>
                 <p>$ 362,00</p>
               </div>
-              <a href="#">Comprar</a>
+              <a class="btn-card">Comprar</a>
             </div>
           </div>
         </div>
@@ -329,6 +331,7 @@
             <div class="mapouter">
               <div class="gmap_canvas">
                 <iframe
+                  class="aboutus-iframe"
                   width="400px"
                   height="400px"
                   id="gmap_canvas"
@@ -348,24 +351,19 @@
               <img src="./assets/img/cells.PNG" alt="redes" />
               <ul class="lista-redes sect-text">
                 <li>
-                  <span class="icon-linkedin-rect"></span
-                  ><a href="#"> @moneybank.arg</a>
+                  <span class="icon-linkedin-rect"></span><a> @moneybank.arg</a>
                 </li>
                 <li>
-                  <span class="icon-instagram-2"></span
-                  ><a href="#"> @moneybank.arg</a>
+                  <span class="icon-instagram-2"></span><a> @moneybank.arg</a>
                 </li>
                 <li>
-                  <span class="icon-facebook-rect"></span
-                  ><a href="#"> /moneybank.arg</a>
+                  <span class="icon-facebook-rect"></span><a> /moneybank.arg</a>
                 </li>
                 <li>
-                  <span class="icon-twitter-bird"></span
-                  ><a href="#"> @moneybank_arg</a>
+                  <span class="icon-twitter-bird"></span><a> @moneybank_arg</a>
                 </li>
                 <li>
-                  <span class="icon-whatsapp"></span
-                  ><a href="#"> +54 9 351 123-4567</a>
+                  <span class="icon-whatsapp"></span><a> +54 9 351 123-4567</a>
                 </li>
               </ul>
             </div>
@@ -420,7 +418,7 @@
             required
           ></textarea>
 
-          <input class="frm-btn-enviar" type="submit" value="Enviar" />
+          <input class="frm-btn" type="submit" value="Enviar" />
         </form>
       </section>
     </main>

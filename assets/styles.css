@@ -13,6 +13,7 @@
   --Gris: #272d37;
   --Gris2: #626161;
   --Negro: #02050e;
+  --VerdeAgua: #00d5ff;
   /* Fuentes */
   /* Logo: font-family: 'Quicksand', sans-serif; */
   /* Texto Normal: font-family: 'Roboto Condensed', sans-serif; */
@@ -121,7 +122,6 @@ header {
 
 .menu-c a {
   background: linear-gradient(215deg, var(--CelesteClaro) 0%, var(--Azul) 50%);
-  /* background-color: var(--CelesteClaro); */
   color: var(--Blanco);
   border-radius: 20px;
   font-size: 30px;
@@ -338,16 +338,18 @@ header {
 }
 
 .btn-log {
+  font-family: "Quicksand", sans-serif;
   font-size: 30px;
   border-radius: 25px;
-  background-color: var(--Celeste);
+  background: linear-gradient(215deg, var(--CelesteClaro) 0%, var(--Azul) 50%);
   padding: 10px 25px;
-  color: var(--bgprimario);
+  color: var(--GrisClaro);
   width: 200px;
   text-align: center;
   box-shadow: 0px 3px 12px 0px var(--Gris2);
   -webkit-box-shadow: 0px 3px 12px 0px var(--Gris2);
-  transition: 0.5s;
+  cursor: pointer;
+  transition: all ease 0.5s;
 }
 
 #puntos {
@@ -477,20 +479,22 @@ header {
   color: #07122b;
 }
 
-.card a {
+.btn-card {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--Blanco);
+  color: var(--GrisClaro);
   height: 35px;
   /* width: 100px; */
   border-radius: 20px;
   font-size: 20px;
   font-weight: 600;
   font-family: "Quicksand", sans-serif;
-  background-color: var(--AzulClaro);
+  background: linear-gradient(215deg, var(--CelesteClaro) 0%, var(--Azul) 50%);
   box-shadow: 0px 3px 12px 0px var(--Gris2);
   -webkit-box-shadow: 0px 3px 12px 0px var(--Gris2);
+  cursor: pointer;
+  transition: all ease 0.3s;
 }
 
 #moneycard {
@@ -565,9 +569,10 @@ header {
 
 .lista-redes li a {
   color: var(--Blanco);
+  cursor: pointer;
 }
 
-.lista-redes li span:nth-child(1) {
+.lista-redes li span {
   background-color: var(--GrisClaro);
   padding: 5px;
   font-size: 25px;
@@ -595,14 +600,17 @@ header {
   gap: 10px;
   font-family: "Quicksand", sans-serif;
   color: var(--AzulClaro);
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 #name,
 #subject,
 #email,
-#message {
+#message,
+#pass,
+#adress,
+#phone {
   border-radius: 15px;
   font-size: 20px;
   padding: 5px 10px;
@@ -611,15 +619,15 @@ header {
   border: none;
 }
 
-.frm-btn-enviar {
+.frm-btn {
   border-radius: 20px;
   font-size: 25px;
   justify-content: center;
   padding: 5px 80px;
   margin: 15px auto;
   font-family: "Quicksand", sans-serif;
-  background-color: var(--Celeste);
-  color: var(--Blanco);
+  background: linear-gradient(215deg, var(--CelesteClaro) 0%, var(--Azul) 50%);
+  color: var(--GrisClaro);
   font-weight: 600;
   border: none;
   box-shadow: 0px 3px 12px 0px var(--Gris2);
@@ -637,4 +645,43 @@ footer {
   );
   color: var(--bgprimario);
   font-size: 20px;
+  height: 70px;
+}
+
+/* LOGUIN / REGISTER */
+
+.navbar-user {
+  height: 50px;
+}
+
+#login-register {
+  margin: auto;
+  height: calc(100vh - 130px);
+  width: 100vw;
+  min-width: 360px;
+}
+
+.log-reg-container {
+  flex-direction: column;
+  position: relative;
+  color: #0099f6;
+  background-color: var(--GrisClaro);
+  max-width: 1200px;
+  border-radius: 30px;
+  padding: 220px 35px 35px 35px;
+  margin: 15px;
+}
+
+.log-reg {
+  justify-content: center;
+}
+
+.log-reg h1 {
+  top: -20px;
+}
+
+.log-reg-container p {
+  padding-bottom: 35px;
+  text-align: center;
+  font-size: 30px;
 }

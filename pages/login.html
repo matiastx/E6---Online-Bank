@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MoneyNet Login</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <link rel="stylesheet" href="../assets/animaciones.css" />
+    <link rel="stylesheet" href="../assets/mediaqueries.css" />
+    <link rel="stylesheet" href="../assets/fontello.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto+Condensed:wght@300&family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="flex center">
+      <nav class="navbar-container flex">
+        <div class="logo-container flex">
+          <img src="../assets/img/Logo_Circ.png" alt="logo" class="logo" />
+          <a href="../index.html">Money<span>Net</span></a>
+        </div>
+        <img class="navbar-user" src="../assets/Icons/icon-user.png" alt="" />
+      </nav>
+    </header>
+    <main>
+      <!-- inicio del Loguin -->
+      <section id="login-register" class="flex center">
+        <div class="log-reg-container flex">
+          <div class="hero-logo log-reg flex">
+            <img src="../assets/img/Logo_Circ.png" alt="logoMB" />
+            <h1>Money<span>Net</span></h1>
+          </div>
+          <p class="sect-text">
+            ¡Bienvenido a MoneyBank! Si ya eres cliente, ingresa tus datos para
+            acceder a tu cuenta y gestionar tus operaciones bancarias de manera
+            rápida y segura.
+          </p>
+          <form class="contact-frm flex">
+            <label for="email">Correo electrónico:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              maxlength="50"
+              placeholder="Ingrese su correo electrónico"
+              required
+            />
+
+            <label for="pass">Contraseña:</label>
+            <input
+              type="password"
+              id="pass"
+              name="pass"
+              maxlength="80"
+              placeholder="Ingrese su Contraseña"
+              required
+            />
+
+            <input class="frm-btn" type="submit" value="Ingresar" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Derechos reservados &copy; 2023
+        <b class="b-mn">Money<span class="s-mn">Net</span></b> Banco Online
+      </p>
+    </footer>
+  </body>
+</html>
