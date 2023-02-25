@@ -35,7 +35,7 @@
 }
 
 body {
-  margin-top: 60px;
+  margin-top: 65px;
   background-color: var(--bgprimario);
 }
 
@@ -284,13 +284,21 @@ header {
   background: linear-gradient(215deg, var(--CelesteClaro) 0%, var(--Azul) 50%);
 }
 
+main {
+  min-height: calc(100vh - 130px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #hero {
   background-color: var(--GrisClaro);
   gap: 15px;
   position: relative;
   padding-left: 20px;
   padding-top: 20px;
-  margin-top: 145px;
+  margin-top: 90px;
 }
 
 .hero-logo img {
@@ -646,6 +654,9 @@ header {
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 20px;
   border-top: solid 1px var(--AzulOscuro);
@@ -666,8 +677,7 @@ footer {
 }
 
 #login-register {
-  min-width: 360px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .log-reg-container {
