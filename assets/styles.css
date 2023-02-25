@@ -298,7 +298,7 @@ main {
   position: relative;
   padding-left: 20px;
   padding-top: 20px;
-  margin-top: 90px;
+  margin-top: 85px;
 }
 
 .hero-logo img {
@@ -463,18 +463,6 @@ main {
   text-align: center;
 }
 
-/* .card-title-desc {
-  display: flex;
-  justify-content: center;
-  width: 140px;
-  gap: 3px;
-}
-
-.card-title-desc p {
-  color: green;
-  font-weight: 700;
-} */
-
 .img-cards {
   height: 75px;
   padding-left: 15px;
@@ -570,6 +558,7 @@ main {
 
 .aboutus-mas-mapa {
   flex-direction: column;
+  gap: 15px;
 }
 
 .aboutus-mas-redes-det img {
