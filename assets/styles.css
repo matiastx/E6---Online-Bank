@@ -455,7 +455,7 @@ header {
   text-align: center;
 }
 
-.card-title-desc {
+/* .card-title-desc {
   display: flex;
   justify-content: center;
   width: 140px;
@@ -465,7 +465,7 @@ header {
 .card-title-desc p {
   color: green;
   font-weight: 700;
-}
+} */
 
 .img-cards {
   height: 75px;
