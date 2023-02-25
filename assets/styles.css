@@ -16,7 +16,7 @@
   --Gris: #272d37;
   --Gris2: #626161;
   --Negro: #02050e;
-  --Home: #a9d2e2;
+  --Home: #e4f7ff;
 
   /* Fuentes */
   /* Logo: font-family: 'Quicksand', sans-serif; */
@@ -74,11 +74,15 @@ header {
   height: 65px;
   padding: 10px;
   width: 99vw;
-  background: linear-gradient(180deg, #043f6e 0%, #0099f6 100%);
+  background: linear-gradient(
+    180deg,
+    var(--AzulClaro) 0%,
+    var(--CelesteClaro) 100%
+  );
   color: var(--bgprimario);
   box-shadow: 0px 3px 12px 0px #0099f666;
   -webkit-box-shadow: 0px 3px 12px 0px #0099f666;
-  border-bottom: solid 1px #043f6e;
+  border-bottom: solid 1px var(--AzulClaro);
   transition: 0.7s;
   z-index: 15;
 }
@@ -126,7 +130,7 @@ header {
 
 .navbar-list li:first-child > a {
   font-weight: 700;
-  color: #a9d2e2;
+  color: var(--Home);
 }
 
 .menu-c a {
@@ -184,7 +188,7 @@ header {
 
 .carrito-item {
   gap: 15px;
-  border: #0099f6 solid 1px;
+  border: var(--CelesteClaro) solid 1px;
   border-radius: 20px;
   padding: 15px;
   background-color: var(--bgprimario);
