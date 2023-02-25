@@ -1,0 +1,21 @@
+/* media 950px */
+@media (max-width: 950px) {
+  .log-reg img {
+    height: 200px;
+  }
+
+  .sect-text {
+    font-size: 10px;
+  }
+
+  .log-reg-container {
+    padding-top: 180px;
+  }
+}
+
+/* media 650px */
+@media (max-width: 450px) {
+  #login-register {
+    height: 100vh;
+  }
+}
