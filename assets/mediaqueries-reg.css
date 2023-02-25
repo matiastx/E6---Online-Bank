@@ -1,5 +1,19 @@
+/* media 2000px */
+@media (max-width: 2000px) {
+  body {
+    margin-top: 120px;
+  }
+  main {
+    min-height: calc(100vh - 190px);
+  }
+}
+
 /* media 950px */
 @media (max-width: 950px) {
+  body {
+    margin-top: 120px;
+  }
+
   .log-reg img {
     height: 200px;
   }
@@ -13,9 +27,9 @@
   }
 }
 
-/* media 650px */
-@media (max-width: 450px) {
-  #login-register {
-    height: 100vh;
+/* media 525px */
+@media (max-width: 525px) {
+  main {
+    height: unset;
   }
 }
