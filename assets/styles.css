@@ -586,11 +586,12 @@ main {
 }
 
 .lista-redes li span {
-  background-color: var(--GrisClaro);
   padding: 7px;
   font-size: 25px;
   border-radius: 25px;
-  background: linear-gradient(215deg, #631b93 0%, #1d3efd 50%, #45fcf0 100%);
+  background: var(--Azul);
+  transition: all 1s;
+  cursor: pointer;
 }
 
 #contact {

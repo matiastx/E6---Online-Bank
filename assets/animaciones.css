@@ -177,6 +177,10 @@ html {
   font-weight: 700;
 }
 
+.lista-redes li span:hover {
+  background: var(--CelesteClaro);
+}
+
 /*ANIMACIONES */
 
 @keyframes fade {
