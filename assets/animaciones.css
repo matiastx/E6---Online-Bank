@@ -178,7 +178,12 @@ html {
 }
 
 .lista-redes li span:hover {
-  background: var(--CelesteClaro);
+  background: var(--bgprimario);
+  color: var(--CelesteClaro);
+}
+
+.lista-redes li a:hover {
+  color: var(--CelesteClaro);
 }
 
 /*ANIMACIONES */

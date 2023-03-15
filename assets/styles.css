@@ -570,6 +570,8 @@ main {
 .mapouter {
   box-shadow: 0px 3px 10px 0px var(--Gris2);
   -webkit-box-shadow: 0px 3px 10px 0px var(--Gris2);
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .aboutus-mas-mapa a {
@@ -598,14 +600,15 @@ main {
 .lista-redes li a {
   color: var(--Gris2);
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .lista-redes li span {
-  padding: 7px;
+  padding: 5px;
   font-size: 25px;
   border-radius: 25px;
   background: var(--Azul);
-  transition: all 1s;
+  transition: all 0.5s;
   cursor: pointer;
 }
 
