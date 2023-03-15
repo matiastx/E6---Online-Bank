@@ -406,6 +406,7 @@ main {
   color: var(--GrisClaro);
   min-height: 90px;
   font-size: 18px;
+  text-align: center;
 }
 
 #crypto-buy {
@@ -585,6 +586,7 @@ main {
 
 #contact p {
   color: var(--AzulOscuro);
+  text-align: center;
 }
 
 .contact-frm {
