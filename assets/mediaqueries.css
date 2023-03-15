@@ -65,6 +65,14 @@
   .aboutus-mas {
     gap: 25px;
   }
+
+  .aboutus-mas-mapa {
+    margin-top: 10px;
+  }
+
+  .aboutus-mas-redes {
+    gap: 30px;
+  }
 }
 
 /* media 650px */

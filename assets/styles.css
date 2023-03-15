@@ -535,7 +535,7 @@ main {
 
 .aboutus-mas-redes {
   flex-direction: column;
-  gap: 25px;
+  gap: 60px;
 }
 
 .aboutus-mas-redes h2 {
@@ -543,6 +543,7 @@ main {
 }
 
 .aboutus-mas-mapa {
+  margin-top: 50px;
   flex-direction: column;
   gap: 15px;
 }
