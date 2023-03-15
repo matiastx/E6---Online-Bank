@@ -397,6 +397,8 @@ main {
   width: 340px;
   border-radius: 25px;
   border: var(--Celeste) 2px solid;
+  box-shadow: 0px 3px 10px 0px var(--Gris2);
+  -webkit-box-shadow: 0px 3px 10px 0px var(--Gris2);
 }
 
 .flyers-container img {
@@ -427,6 +429,8 @@ main {
 #crypto-buy {
   background-color: var(--CelesteClaro);
   width: 100%;
+  box-shadow: 0px 3px 10px 0px var(--Gris2);
+  -webkit-box-shadow: 0px 3px 10px 0px var(--Gris2);
 }
 
 .cryptomonedas {
@@ -554,13 +558,18 @@ main {
 }
 
 .aboutus-mas-redes h2 {
-  color: var(--Negro);
+  color: var(--Gris);
 }
 
 .aboutus-mas-mapa {
   margin-top: 50px;
   flex-direction: column;
   gap: 15px;
+}
+
+.mapouter {
+  box-shadow: 0px 3px 10px 0px var(--Gris2);
+  -webkit-box-shadow: 0px 3px 10px 0px var(--Gris2);
 }
 
 .aboutus-mas-mapa a {
@@ -604,6 +613,8 @@ main {
   background-color: var(--GrisClaro);
   flex-direction: column;
   gap: 25px;
+  box-shadow: 0px 3px 10px 0px var(--Gris2);
+  -webkit-box-shadow: 0px 3px 10px 0px var(--Gris2);
 }
 
 #contact h2 {
