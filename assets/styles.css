@@ -298,11 +298,17 @@ main {
 
 #hero {
   background-color: var(--GrisClaro);
+  flex-direction: column;
   gap: 50px;
   position: relative;
   padding: 50px;
+  padding-top: 200px;
   margin-top: 85px;
   min-height: 300px;
+}
+
+.hero-logo {
+  justify-content: center;
 }
 
 .hero-logo img {
@@ -316,6 +322,7 @@ main {
 }
 
 .hero-logo h1 {
+  top: auto;
   color: var(--Blanco);
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
@@ -323,7 +330,6 @@ main {
   text-align: center;
   text-shadow: 2px 3px 2px rgba(6, 25, 51, 0.4);
   position: relative;
-  top: 150px;
   height: 80px;
 }
 
@@ -340,6 +346,7 @@ main {
 
 .hero-info p {
   color: var(--AzulOscuro);
+  text-align: center;
 }
 
 .b-mn {
@@ -518,6 +525,7 @@ main {
 
 .aboutus-info p {
   color: var(--GrisClaro);
+  text-align: center;
 }
 
 .aboutus-mas {

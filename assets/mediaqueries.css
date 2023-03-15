@@ -46,19 +46,6 @@
     flex-wrap: wrap;
   }
 
-  #hero {
-    flex-direction: column;
-    padding-top: 200px;
-  }
-
-  .hero-logo {
-    justify-content: center;
-  }
-
-  .hero-logo h1 {
-    top: auto;
-  }
-
   .reg-log {
     flex-wrap: wrap;
   }
