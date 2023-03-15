@@ -100,6 +100,12 @@ header {
   gap: 15px;
 }
 
+.logo-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo {
   height: 40px;
 }
