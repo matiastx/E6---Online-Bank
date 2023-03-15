@@ -298,11 +298,11 @@ main {
 
 #hero {
   background-color: var(--GrisClaro);
-  gap: 15px;
+  gap: 50px;
   position: relative;
-  padding-left: 20px;
-  padding-top: 20px;
+  padding: 50px;
   margin-top: 85px;
+  min-height: 300px;
 }
 
 .hero-logo img {
@@ -323,7 +323,7 @@ main {
   text-align: center;
   text-shadow: 2px 3px 2px rgba(6, 25, 51, 0.4);
   position: relative;
-  top: 180px;
+  top: 150px;
   height: 80px;
 }
 
@@ -371,28 +371,34 @@ main {
   transition: all ease 0.3s;
 }
 
-#puntos {
+#flyers {
   background-color: var(--AzulOscuro);
   color: var(--bgprimario);
+  width: 100%;
+  gap: 35px;
 }
 
-.puntos-container {
-  gap: 15px;
+.flyers-container {
+  gap: 5px;
+  flex-direction: column-reverse;
+  width: 300px;
 }
 
-.puntos-container img {
-  height: 250px;
+.flyers-container img {
+  height: 200px;
   padding: 50px 20px;
   gap: 15p;
 }
 
-.puntos-info {
+.flyers-info {
   flex-direction: column;
   gap: 25px;
 }
 
-.puntos-info p {
+.flyers-info p {
   color: var(--GrisClaro);
+  min-height: 90px;
+  font-size: 18px;
 }
 
 #crypto {
@@ -412,6 +418,7 @@ main {
 
 #crypto-buy {
   background-color: var(--CelesteClaro);
+  width: 100%;
 }
 
 .cryptomonedas {
@@ -437,16 +444,14 @@ main {
   height: 380px;
   width: 260px;
   border-radius: 30px;
-  background-color: var(--GrisClaro);
+  background-color: var(--bgprimario);
   padding: 10px 10px;
   gap: 15px;
 }
 
 .card-top {
   display: flex;
-  /* justify-content: space-around; */
   justify-content: center;
-  /* padding: 10px 5px; */
   gap: 10px;
 }
 
@@ -508,29 +513,10 @@ main {
   transition: all ease 0.3s;
 }
 
-#moneycard {
-  background-color: var(--GrisClaro);
-  flex-direction: column;
-  gap: 25px;
-}
-
-#moneycard h2 {
-  color: var(--CelesteClaro);
-}
-
-.moneycard-info {
-  gap: 15px;
-}
-
-.moneycard-info img {
-  height: 350px;
-  padding: 10px;
-}
-
 #aboutus {
   background-color: var(--AzulClaro);
   color: var(--GrisClaro);
-  gap: 15px;
+  gap: 30px;
   flex-direction: column;
 }
 

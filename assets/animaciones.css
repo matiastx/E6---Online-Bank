@@ -110,6 +110,18 @@ html {
   font-weight: 700;
 }
 
+.img-cards:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transition: all ease-in-out 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px 8px var(--AzulClaro);
+  -webkit-box-shadow: 0px 0px 10px 8px var(--AzulClaro);
+  transition: all ease-in-out 0.3s;
+}
+
 .navbar-list li {
   position: relative;
   padding: 0;
