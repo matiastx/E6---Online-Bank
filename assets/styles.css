@@ -297,7 +297,7 @@ main {
 }
 
 #hero {
-  background-color: var(--GrisClaro);
+  /* background-color: var(--GrisClaro); */
   flex-direction: column;
   gap: 50px;
   position: relative;
@@ -323,7 +323,7 @@ main {
 
 .hero-logo h1 {
   top: auto;
-  color: var(--Blanco);
+  color: var(--Gris2);
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
   font-size: 50px;
@@ -350,7 +350,7 @@ main {
 }
 
 .b-mn {
-  color: var(--Blanco);
+  color: var(--Gris2);
   text-shadow: #02050e 1px 1px;
   font-family: "Quicksand", sans-serif;
 }
@@ -379,7 +379,7 @@ main {
 }
 
 #flyers {
-  background-color: var(--AzulOscuro);
+  /* background-color: var(--AzulOscuro); */
   color: var(--bgprimario);
   width: 100%;
   gap: 35px;
@@ -388,7 +388,9 @@ main {
 .flyers-container {
   gap: 5px;
   flex-direction: column-reverse;
-  width: 300px;
+  width: 340px;
+  border-radius: 25px;
+  border: var(--Celeste) 2px solid;
 }
 
 .flyers-container img {
@@ -400,10 +402,17 @@ main {
 .flyers-info {
   flex-direction: column;
   gap: 25px;
+  margin: 15px;
+}
+
+.flyers-info h2 {
+  color: var(--Gris);
+  font-weight: 700;
 }
 
 .flyers-info p {
-  color: var(--GrisClaro);
+  color: var(--Negro);
+  font-weight: 600;
   min-height: 90px;
   font-size: 18px;
   text-align: center;
@@ -509,7 +518,7 @@ main {
 }
 
 #aboutus {
-  background-color: var(--AzulClaro);
+  /* background-color: var(--AzulClaro); */
   color: var(--GrisClaro);
   gap: 30px;
   flex-direction: column;
@@ -521,11 +530,11 @@ main {
 }
 
 .aboutus-info h2 {
-  color: var(--Blanco);
+  color: var(--Gris);
 }
 
 .aboutus-info p {
-  color: var(--GrisClaro);
+  color: var(--AzulOscuro);
   text-align: center;
 }
 
@@ -539,13 +548,22 @@ main {
 }
 
 .aboutus-mas-redes h2 {
-  color: var(--Blanco);
+  color: var(--Negro);
 }
 
 .aboutus-mas-mapa {
   margin-top: 50px;
   flex-direction: column;
   gap: 15px;
+}
+
+.aboutus-mas-mapa a {
+  color: #d41414;
+}
+
+.aboutus-mas-mapa span {
+  color: var(--Gris);
+  font-weight: 600;
 }
 
 .aboutus-mas-redes-det img {
@@ -563,15 +581,15 @@ main {
 }
 
 .lista-redes li a {
-  color: var(--Blanco);
+  color: var(--Gris2);
   cursor: pointer;
 }
 
 .lista-redes li span {
   background-color: var(--GrisClaro);
-  padding: 5px;
+  padding: 7px;
   font-size: 25px;
-  border-radius: 30px;
+  border-radius: 25px;
   background: linear-gradient(215deg, #631b93 0%, #1d3efd 50%, #45fcf0 100%);
 }
 
